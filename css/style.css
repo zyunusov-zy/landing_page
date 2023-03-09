@@ -1,0 +1,50 @@
+body{
+	background: url(../img/clouds-sky-anime-11.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-size: 24px;
+	font-family: serif;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+header, .intro{
+	border: 5px solid red;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: row wrap;
+	justify-content: space-around;
+	align-self: stretch;
+	align-items: center;
+	width: 100%;
+}
+
+.main{
+
+}
+
+ul{
+	list-style-type: none;
+	display: flex;
+	gap: 30px;
+}
+
+li > a{
+	text-decoration: none;
+	color: white;
+	font-family: "Tilt Prism";
+}
+
+a:hover{
+	color:red;
+}
+
+.intro{
+	border: 2px solid white;
+	display: flex;
+	flex: 1;
+}
