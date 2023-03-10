@@ -7,24 +7,19 @@ body{
 	flex-flow: column wrap;
 	align-items: center;
 	justify-content: center;
-	margin: 0;
-	padding: 0;
+	color: white;
+	margin: 0px;
+	padding: 0px;
 }
 
 header, .intro{
-	border: 5px solid red;
-	margin: 0;
-	padding: 0;
+	/* border: 5px solid red; */
 	display: flex;
-	flex-wrap: row wrap;
+	flex-flow: row wrap;
 	justify-content: space-around;
 	align-self: stretch;
 	align-items: center;
-	width: 100%;
-}
-
-.main{
-
+	width: 85%;
 }
 
 ul{
@@ -33,8 +28,11 @@ ul{
 	gap: 30px;
 }
 
-li > a{
+a{
 	text-decoration: none;
+}
+
+li > a{
 	color: white;
 	font-family: "Tilt Prism";
 }
@@ -43,8 +41,82 @@ a:hover{
 	color:red;
 }
 
+.main{
+	display: flex;
+	align-self: stretch;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .intro{
-	border: 2px solid white;
+	margin: 5em auto 0 auto;
+	height: 100%;
+	gap: 32px;
+	border-radius: 1.5em;
+	box-shadow: 0 0 2em rgb(69 69 69);
+}
+
+.intro-text{
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 1;
+	text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	border-radius: 15px;
+	padding: 0 8px;
+	margin-left: 2em;
+}
+
+.intro-text > h1
+{
+	align-self: flex-start;
+	margin-bottom: -16px;
+	font-size: 72px;
+}
+
+.intro-text > p
+{
+	align-self: flex-start;
+}
+
+.intro-img > img
+{
+	align-self: stretch;
+	width: 500px;
+	height: 340px;
+	/* overflow: hidden; */
+}
+
+.intro-img{
 	display: flex;
 	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-text > a {
+	font-size: 26px;
+	font-family: "Indie Flower";
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 33%;
+	height: 50px;
+	margin: 10px 0;
+	border-radius: 25px;
+	align-self: center;
+	border: 5px solid gray;
+	background: linear-gradient(to bottom, #cc0000 0%, #ff99cc 100%);
+}
+
+.intro-text > a:hover
+{
+	background: linear-gradient(to bottom, #0099ff 0%, #66ff66 100%);
+	border: 5px solid red;
+	border-radius: 35px;
+}
+
+.info{
+	height: 100vh;
 }
