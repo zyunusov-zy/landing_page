@@ -19,7 +19,7 @@ header, .intro{
 	justify-content: space-around;
 	align-self: stretch;
 	align-items: center;
-	width: 85%;
+	width: 100%;
 }
 
 ul{
@@ -45,11 +45,12 @@ a:hover{
 	display: flex;
 	align-self: stretch;
 	flex-flow: column wrap;
-	align-items: center;
-	justify-content: space-between;
+	align-items: space-between;
+	justify-content: center;
 }
 
 .intro{
+	width: 85%;
 	margin: 5em auto 0 auto;
 	height: 100%;
 	gap: 32px;
@@ -118,5 +119,50 @@ a:hover{
 }
 
 .info{
-	height: 100vh;
+	padding: 64px;
+	flex-flow: column wrap;
+}
+.info > h1
+{
+	font-size: 36px;
+	font-weight: bolder;
+	text-align: center;
+} 
+
+.info-cons{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	gap: 20px;
+}
+
+.info-container{
+	max-width: 200px;
+	transition: ease-in .7s;
+}
+.info-container:hover {
+    color: lightpink;
+}
+
+.info-img > img{
+	width:	200px;
+	height: 200px;
+	border: 3px solid white;
+	border-radius: 25px;
+}
+.info-img
+{
+	transition: ease 0.1s;
+}
+
+.info-container > p{
+	align-self: flex-start;
+}
+
+.quote{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: red;
 }
