@@ -1,6 +1,5 @@
 body{
-	background: url(../img/clouds-sky-anime-11.jpg) no-repeat center center fixed;
-	background-size: cover;
+	background: linear-gradient(to bottom, #cc2b5e 0%, #753a88 100%);
 	font-size: 24px;
 	font-family: serif;
 	display: flex;
@@ -10,6 +9,10 @@ body{
 	color: white;
 	margin: 0px;
 	padding: 0px;
+}
+
+.info{
+	background: linear-gradient(to bottom, #cc2b5e 0%, #753a88 100%);
 }
 
 header, .intro{
@@ -30,6 +33,7 @@ ul{
 
 a{
 	text-decoration: none;
+	color: white;
 }
 
 li > a{
@@ -42,6 +46,8 @@ a:hover{
 }
 
 .main{
+	background: url(../img/clouds-sky-anime-11.jpg) no-repeat center center fixed;
+	background-size: cover;
 	display: flex;
 	align-self: stretch;
 	flex-flow: column wrap;
@@ -50,12 +56,14 @@ a:hover{
 }
 
 .intro{
+	
 	width: 85%;
-	margin: 5em auto 0 auto;
-	height: 100%;
+	margin: 2em auto 2em auto;
+	height: 100vh;
 	gap: 32px;
 	border-radius: 1.5em;
-	box-shadow: 0 0 2em rgb(69 69 69);
+	background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2em rgb(69, 69, 69);
 }
 
 .intro-text{
@@ -83,8 +91,8 @@ a:hover{
 .intro-img > img
 {
 	align-self: stretch;
-	width: 500px;
-	height: 340px;
+	width: 75%;
+	height: 50%;
 	/* overflow: hidden; */
 }
 
@@ -119,6 +127,7 @@ a:hover{
 }
 
 .info{
+	margin-top: 20px;
 	padding: 64px;
 	flex-flow: column wrap;
 }
@@ -141,7 +150,7 @@ a:hover{
 	transition: ease-in .7s;
 }
 .info-container:hover {
-    color: lightpink;
+    color: black;
 }
 
 .info-img > img{
@@ -160,9 +169,31 @@ a:hover{
 }
 
 .quote{
-	height: 100%;
-	width: 100%;
+	background: url("img/");
+	height: 50vh;
 	display: flex;
 	flex-flow: column wrap;
-	background-color: red;
+	justify-content: center;
+	align-items: center;
+	padding: 64px;
+}
+
+
+.quote > p:nth-child(1){
+	width: 50%;
+	font-style: italic;
+	font-size: 35px;
+	padding: 0;
+	margin: 0;
+}
+
+.quote >p:nth-child(2){
+	width: 35%;
+	font-size: 26px;
+	font-weight: bold;
+	align-self: flex-end;
+}
+
+.quote > p {
+	color: white;
 }
