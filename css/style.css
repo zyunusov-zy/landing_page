@@ -56,7 +56,6 @@ a:hover{
 }
 
 .intro{
-	
 	width: 85%;
 	margin: 2em auto 2em auto;
 	height: 100vh;
@@ -110,7 +109,7 @@ a:hover{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 33%;
+	min-width: 33%;
 	height: 50px;
 	margin: 10px 0;
 	border-radius: 25px;
@@ -169,8 +168,9 @@ a:hover{
 }
 
 .quote{
-	background: url("img/");
-	height: 50vh;
+	background: url("../img/LiamWong_AkihabaraRain_Tokyo_Japan.jpg") center center no-repeat fixed;
+	background-size: cover;
+	height: 100%;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
@@ -183,17 +183,84 @@ a:hover{
 	width: 50%;
 	font-style: italic;
 	font-size: 35px;
-	padding: 0;
-	margin: 0;
+	/* margin: 0; */
 }
 
 .quote >p:nth-child(2){
-	width: 35%;
 	font-size: 26px;
 	font-weight: bold;
 	align-self: flex-end;
+	margin-right: 25%;
 }
 
 .quote > p {
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2em rgb(69, 69, 69);
 	color: white;
+	border-radius: 5px;
+}
+
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to bottom, #cc2b5e 0%, #753a88 100%);
+	height: 100%;
+	padding: 50px;
+}
+.contact-container {
+	display: flex;
+	height: 100%;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+	padding: 36px;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2em rgb(69, 69, 69);
+}
+
+.contact-text > p{
+	margin: 0;
+}
+
+.contact-text > p:nth-child(1){
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.contact-container > a{
+	display: flex;
+	justify-content: center;
+	padding: 8px;
+	background: linear-gradient(to bottom, #cc0000 0%, #ff99cc 100%);
+	border-radius: 20px;
+	min-width: 10%;
+	height: 30px;
+	border: 5px solid white;
+}
+
+.contact-container > a:hover
+{
+	color:black;
+	background: linear-gradient(to bottom, #0099ff 0%, #66ff66 100%);
+	border: 5px solid lightpink;
+}
+
+footer{
+	padding-top: 20px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/clouds-sky-anime-11.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+footer > p {
+	font-size: 18px;
 }
