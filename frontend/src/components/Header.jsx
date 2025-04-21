@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="min-h-16 w-full py-4 flex justify-around items-center flex-wrap gap-4 border-b border-gray-200 text-base">
+    <header className=" sticky top-0 min-h-16 w-full py-4 flex justify-around items-center flex-wrap gap-4 border-b border-gray-200 text-base">
       {/* Logo */}
       <div className="flex content-center items-center">
         <a href="" className="flex content-center items-center">
@@ -8,12 +8,12 @@ const Header = () => {
         </a>
       </div>
       {/* NavBar */}
-      <nav className="hidden md:block">
+      <nav className="hidden md:block font-semibold">
         <ul className="flex gap-10 text-gray-500 ">
           <li>
             <a
               href=""
-              className="hover:text-black hover:underline hover:text-lg"
+              className="hover:text-black hover:underline hover:text-lg transition-all"
             >
               Home
             </a>
@@ -21,7 +21,7 @@ const Header = () => {
           <li>
             <a
               href=""
-              className="hover:text-black hover:underline hover:text-lg"
+              className="hover:text-black hover:underline hover:text-lg transition-all"
             >
               About
             </a>
@@ -29,7 +29,7 @@ const Header = () => {
           <li>
             <a
               href=""
-              className="hover:text-black hover:underline hover:text-lg"
+              className="hover:text-black hover:underline hover:text-lg transition-all"
             >
               Contact
             </a>
@@ -37,7 +37,7 @@ const Header = () => {
           <li>
             <a
               href=""
-              className="hover:text-black hover:underline hover:text-lg"
+              className="hover:text-black hover:underline hover:text-lg transition-all"
             >
               Blog
             </a>
@@ -45,7 +45,7 @@ const Header = () => {
           <li>
             <a
               href=""
-              className="hover:text-black hover:underline hover:text-lg"
+              className="hover:text-black hover:underline hover:text-lg transition-all"
             >
               Careers
             </a>
