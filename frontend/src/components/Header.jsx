@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className=" sticky top-0 min-h-16 w-full py-4 flex justify-around items-center flex-wrap gap-4 border-b border-gray-200 text-base">
+    <header className=" sticky top-0 min-h-16 w-full py-4 flex justify-around items-center flex-wrap gap-4 border-b border-gray-200 text-base z-50 bg-white">
       {/* Logo */}
       <div className="flex content-center items-center">
         <a href="" className="flex content-center items-center">
