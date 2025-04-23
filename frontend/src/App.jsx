@@ -60,8 +60,19 @@ function App() {
     },
   ];
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 relative overflow-hidden">
       <Header />
+      <div className="hidden md:block md:absolute md:top-0 md:right-0 w-full md:h-full max-w-2xl z-10">
+        <img
+          src="/bg-intro-desktop.svg"
+          alt="Background"
+          className="absolute top-0 right-0 h-full md:-top-0 md:-right-80 lg:-top-0 lg:-right-35 md:h-auto md:w-full transform md:scale-125"
+        />
+      </div>
+
+      <div className="hidden md:block mt-10 md:mt-0 md:absolute md:top-0 lg:right-0 md:w-full md:-right-20 lg:max-w-xl md:max-w-lg z-10 transform md:translate-x-24 md:-translate-y-12">
+        <img src="/image-mockups.png" alt="Phone" className="w-full " />
+      </div>
       <main className="h-full">
         <section className="relative bg-white">
           {/* Content wrapper */}
@@ -85,21 +96,6 @@ function App() {
             </div>
 
             {/* Image container - positioned correctly for desktop and mobile */}
-            <div className="relative md:w-1/2 md:static">
-              {/* Background pattern */}
-              <div className="absolute md:top-0 md:right-0 w-full md:h-full max-w-2xl z-0">
-                <img
-                  src="/bg-intro-desktop.svg"
-                  alt="Background"
-                  className="absolute top-0 right-0 h-full md:-top-16 md:-right-16 md:h-auto md:w-full transform md:scale-120"
-                />
-              </div>
-
-              {/* Phone mockups */}
-              <div className="relative mt-10 md:mt-0 md:absolute md:top-0 md:right-0 md:w-full md:max-w-lg z-10 transform md:translate-x-24 md:-translate-y-12">
-                <img src="/image-mockups.png" alt="Phone" className="w-full" />
-              </div>
-            </div>
           </div>
         </section>
 
