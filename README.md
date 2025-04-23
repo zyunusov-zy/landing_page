@@ -9,11 +9,12 @@ A modern, clean, and fully responsive **bank landing page** built using **React*
 ### 💻 Desktop View  
 ![Desktop Demo](./demo-desktop.png)
 
+![Desktop Demo](./demo-desktop1.png)
+
 ### 📱 Mobile View  
 ![Mobile Demo](./demo-mobile.png)
-
-> Place your screenshots inside a `demo/` folder at the root level.
-
+![Mobile Demo](./demo-mobile1.png)
+![Mobile Demo](./demo-mobile2.png)
 ---
 
 ## 🧰 Tech Stack
