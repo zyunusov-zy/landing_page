@@ -60,12 +60,12 @@ function App() {
     },
   ];
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-100">
       <Header />
       <main className="h-full">
         <section className="relative bg-white">
           {/* Content wrapper */}
-          <div className="max-w-7xl mx-auto  md:flex md:items-center">
+          <div className="max-w-7xl mx-auto  md:flex md:items-center md:px-6 px-2">
             {/* Text content - will stack on mobile */}
             <div className="py-16 md:py-24 md:w-1/2 relative z-10">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -91,7 +91,7 @@ function App() {
                 <img
                   src="/bg-intro-desktop.svg"
                   alt="Background"
-                  className="absolute top-0 right-0 h-full md:-top-16 md:-right-16 md:h-auto md:w-full transform md:scale-125"
+                  className="absolute top-0 right-0 h-full md:-top-16 md:-right-16 md:h-auto md:w-full transform md:scale-120"
                 />
               </div>
 
